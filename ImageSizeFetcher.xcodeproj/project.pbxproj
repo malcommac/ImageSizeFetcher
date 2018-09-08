@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* ImageSizeFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* ImageSizeFetcher.framework */; };
-		646374CB21443AF800CF9CDE /* ImageSizeFetcherOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374CA21443AF800CF9CDE /* ImageSizeFetcherOp.swift */; };
-		646374CC21443AF800CF9CDE /* ImageSizeFetcherOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374CA21443AF800CF9CDE /* ImageSizeFetcherOp.swift */; };
-		646374CD21443AF800CF9CDE /* ImageSizeFetcherOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374CA21443AF800CF9CDE /* ImageSizeFetcherOp.swift */; };
-		646374CE21443AF800CF9CDE /* ImageSizeFetcherOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374CA21443AF800CF9CDE /* ImageSizeFetcherOp.swift */; };
-		646374D021443B3E00CF9CDE /* ImageSizeFetcherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374CF21443B3E00CF9CDE /* ImageSizeFetcherParser.swift */; };
-		646374D121443B3E00CF9CDE /* ImageSizeFetcherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374CF21443B3E00CF9CDE /* ImageSizeFetcherParser.swift */; };
-		646374D221443B3E00CF9CDE /* ImageSizeFetcherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374CF21443B3E00CF9CDE /* ImageSizeFetcherParser.swift */; };
-		646374D321443B3E00CF9CDE /* ImageSizeFetcherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374CF21443B3E00CF9CDE /* ImageSizeFetcherParser.swift */; };
-		8933C7851EB5B820000D00A4 /* ImageSizeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* ImageSizeFetcher.swift */; };
-		8933C7861EB5B820000D00A4 /* ImageSizeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* ImageSizeFetcher.swift */; };
-		8933C7871EB5B820000D00A4 /* ImageSizeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* ImageSizeFetcher.swift */; };
-		8933C7881EB5B820000D00A4 /* ImageSizeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* ImageSizeFetcher.swift */; };
+		646374D7214440E000CF9CDE /* ImageSizeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D4214440E000CF9CDE /* ImageSizeFetcher.swift */; };
+		646374D8214440E000CF9CDE /* ImageSizeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D4214440E000CF9CDE /* ImageSizeFetcher.swift */; };
+		646374D9214440E000CF9CDE /* ImageSizeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D4214440E000CF9CDE /* ImageSizeFetcher.swift */; };
+		646374DA214440E000CF9CDE /* ImageSizeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D4214440E000CF9CDE /* ImageSizeFetcher.swift */; };
+		646374DB214440E000CF9CDE /* ImageSizeFetcherOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D5214440E000CF9CDE /* ImageSizeFetcherOp.swift */; };
+		646374DC214440E000CF9CDE /* ImageSizeFetcherOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D5214440E000CF9CDE /* ImageSizeFetcherOp.swift */; };
+		646374DD214440E000CF9CDE /* ImageSizeFetcherOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D5214440E000CF9CDE /* ImageSizeFetcherOp.swift */; };
+		646374DE214440E000CF9CDE /* ImageSizeFetcherOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D5214440E000CF9CDE /* ImageSizeFetcherOp.swift */; };
+		646374DF214440E000CF9CDE /* ImageSizeFetcherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D6214440E000CF9CDE /* ImageSizeFetcherParser.swift */; };
+		646374E0214440E000CF9CDE /* ImageSizeFetcherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D6214440E000CF9CDE /* ImageSizeFetcherParser.swift */; };
+		646374E1214440E000CF9CDE /* ImageSizeFetcherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D6214440E000CF9CDE /* ImageSizeFetcherParser.swift */; };
+		646374E2214440E000CF9CDE /* ImageSizeFetcherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646374D6214440E000CF9CDE /* ImageSizeFetcherParser.swift */; };
 		8933C78E1EB5B82C000D00A4 /* ImageSizeFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* ImageSizeFetcherTests.swift */; };
 		8933C78F1EB5B82C000D00A4 /* ImageSizeFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* ImageSizeFetcherTests.swift */; };
 		8933C7901EB5B82D000D00A4 /* ImageSizeFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* ImageSizeFetcherTests.swift */; };
@@ -57,9 +57,9 @@
 		52D6D9E21BEFFF6E002C0205 /* ImageSizeFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageSizeFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* ImageSizeFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageSizeFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* ImageSizeFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageSizeFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		646374CA21443AF800CF9CDE /* ImageSizeFetcherOp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSizeFetcherOp.swift; sourceTree = "<group>"; };
-		646374CF21443B3E00CF9CDE /* ImageSizeFetcherParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSizeFetcherParser.swift; sourceTree = "<group>"; };
-		8933C7841EB5B820000D00A4 /* ImageSizeFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSizeFetcher.swift; sourceTree = "<group>"; };
+		646374D4214440E000CF9CDE /* ImageSizeFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSizeFetcher.swift; path = ImageSizeFetcher/ImageSizeFetcher.swift; sourceTree = "<group>"; };
+		646374D5214440E000CF9CDE /* ImageSizeFetcherOp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSizeFetcherOp.swift; path = ImageSizeFetcher/ImageSizeFetcherOp.swift; sourceTree = "<group>"; };
+		646374D6214440E000CF9CDE /* ImageSizeFetcherParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSizeFetcherParser.swift; path = ImageSizeFetcher/ImageSizeFetcherParser.swift; sourceTree = "<group>"; };
 		8933C7891EB5B82A000D00A4 /* ImageSizeFetcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSizeFetcherTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* ImageSizeFetcher.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageSizeFetcher.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* ImageSizeFetcherTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageSizeFetcherTests.plist; sourceTree = "<group>"; };
@@ -159,9 +159,9 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8933C7841EB5B820000D00A4 /* ImageSizeFetcher.swift */,
-				646374CA21443AF800CF9CDE /* ImageSizeFetcherOp.swift */,
-				646374CF21443B3E00CF9CDE /* ImageSizeFetcherParser.swift */,
+				646374D4214440E000CF9CDE /* ImageSizeFetcher.swift */,
+				646374D5214440E000CF9CDE /* ImageSizeFetcherOp.swift */,
+				646374D6214440E000CF9CDE /* ImageSizeFetcherParser.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -363,7 +363,7 @@
 				TargetAttributes = {
 					52D6D97B1BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0940;
 					};
 					52D6D9851BEFF229002C0205 = {
 						CreatedOnToolsVersion = 7.1;
@@ -371,15 +371,15 @@
 					};
 					52D6D9E11BEFFF6E002C0205 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0940;
 					};
 					52D6D9EF1BEFFFBE002C0205 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0940;
 					};
 					52D6DA0E1BF000BD002C0205 = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0940;
 					};
 					DD7502791C68FCFC006590AF = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -471,9 +471,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				646374D021443B3E00CF9CDE /* ImageSizeFetcherParser.swift in Sources */,
-				646374CB21443AF800CF9CDE /* ImageSizeFetcherOp.swift in Sources */,
-				8933C7851EB5B820000D00A4 /* ImageSizeFetcher.swift in Sources */,
+				646374DF214440E000CF9CDE /* ImageSizeFetcherParser.swift in Sources */,
+				646374D7214440E000CF9CDE /* ImageSizeFetcher.swift in Sources */,
+				646374DB214440E000CF9CDE /* ImageSizeFetcherOp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,9 +489,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				646374D221443B3E00CF9CDE /* ImageSizeFetcherParser.swift in Sources */,
-				646374CD21443AF800CF9CDE /* ImageSizeFetcherOp.swift in Sources */,
-				8933C7871EB5B820000D00A4 /* ImageSizeFetcher.swift in Sources */,
+				646374E1214440E000CF9CDE /* ImageSizeFetcherParser.swift in Sources */,
+				646374D9214440E000CF9CDE /* ImageSizeFetcher.swift in Sources */,
+				646374DD214440E000CF9CDE /* ImageSizeFetcherOp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,9 +499,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				646374D321443B3E00CF9CDE /* ImageSizeFetcherParser.swift in Sources */,
-				646374CE21443AF800CF9CDE /* ImageSizeFetcherOp.swift in Sources */,
-				8933C7881EB5B820000D00A4 /* ImageSizeFetcher.swift in Sources */,
+				646374E2214440E000CF9CDE /* ImageSizeFetcherParser.swift in Sources */,
+				646374DA214440E000CF9CDE /* ImageSizeFetcher.swift in Sources */,
+				646374DE214440E000CF9CDE /* ImageSizeFetcherOp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,9 +509,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				646374D121443B3E00CF9CDE /* ImageSizeFetcherParser.swift in Sources */,
-				646374CC21443AF800CF9CDE /* ImageSizeFetcherOp.swift in Sources */,
-				8933C7861EB5B820000D00A4 /* ImageSizeFetcher.swift in Sources */,
+				646374E0214440E000CF9CDE /* ImageSizeFetcherParser.swift in Sources */,
+				646374D8214440E000CF9CDE /* ImageSizeFetcher.swift in Sources */,
+				646374DC214440E000CF9CDE /* ImageSizeFetcherOp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +711,7 @@
 		52D6D9941BEFF229002C0205 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/ImageSizeFetcherTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -724,6 +725,7 @@
 		52D6D9951BEFF229002C0205 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Configs/ImageSizeFetcherTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -738,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -750,6 +753,7 @@
 				PRODUCT_NAME = ImageSizeFetcher;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -760,6 +764,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -783,6 +788,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -795,6 +801,7 @@
 				PRODUCT_NAME = ImageSizeFetcher;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -805,6 +812,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -828,6 +836,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -843,6 +852,7 @@
 				PRODUCT_NAME = ImageSizeFetcher;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -851,6 +861,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -874,6 +885,7 @@
 		DD7502831C68FCFC006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Configs/ImageSizeFetcherTests.plist;
@@ -889,6 +901,7 @@
 		DD7502841C68FCFC006590AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Configs/ImageSizeFetcherTests.plist;
@@ -905,6 +918,7 @@
 		DD7502961C690C7A006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Configs/ImageSizeFetcherTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ImageSizeFetcher.ImageSizeFetcher-tvOS-Tests";
@@ -918,6 +932,7 @@
 		DD7502971C690C7A006590AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Configs/ImageSizeFetcherTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ImageSizeFetcher.ImageSizeFetcher-tvOS-Tests";
