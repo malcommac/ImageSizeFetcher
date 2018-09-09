@@ -28,38 +28,46 @@ class ImageTestSource {
 class ImageSizeFetcherTests: XCTestCase {
 	
 	let fetcher = ImageSizeFetcher()
+	var testImages: [ImageTestSource] = []
 
+	func random(from lower: UInt32, to upper: UInt32) -> CGFloat {
+		let randomNumber = arc4random_uniform(upper - lower) + lower
+		return CGFloat(randomNumber)
+	}
+	
+	func generateImagesWithDummyImage(_ count: Int = 5, extension: String, in dest: inout [ImageTestSource]) {
+		for _ in 0..<count {
+			let size = CGSize(width: random(from: 50, to: 500), height: random(from: 50, to: 500))
+			dest.append(ImageTestSource("https://dummyimage.com/\(size.width)x\(size.height).png", expSize: size))
+		}
+	}
+	
     func testExample() {
 		let expectation = XCTestExpectation(description: "Download apple.com home page")
 
-		let images = [
-			ImageTestSource("https://zucchitours.com/wp-content/uploads/2018/01/TibetPalace-1250x650.jpg",
-							expSize: CGSize(width: 1250, height: 650)),
-			ImageTestSource("http://pngimg.com/uploads/microsoft/microsoft_PNG16.png",
-							expSize: CGSize(width: 3447, height: 737)),
-			ImageTestSource("https://dummyimage.com/301x402.png",
-							expSize: CGSize(width: 301, height: 402)),
-			ImageTestSource("https://dummyimage.com/301x402.jpg",
-							expSize: CGSize(width: 301, height: 402)),
-			ImageTestSource("https://dummyimage.com/301x402.gif",
-							expSize: CGSize(width: 301, height: 402))
-		]
+		generateImagesWithDummyImage(extension: "png", in: &self.testImages)
+		generateImagesWithDummyImage(extension: "jpg", in: &self.testImages)
+		generateImagesWithDummyImage(extension: "gif", in: &self.testImages)
+		generateImagesWithDummyImage(extension: "bmp", in: &self.testImages)
+
+		var remainingToCheck: Int = self.testImages.count
 		
-		var remainingToCheck: Int = images.count
+		print("Test will check \(remainingToCheck) images...")
 		
-		images.forEach {
-			fetcher.imageInfo(atURL: $0.url) { (err, result) in
-				if let op = images.first(where: { result?.sourceURL.absoluteString == $0.url.absoluteString }) {
+		self.testImages.forEach {
+			fetcher.sizeFor(atURL: $0.url) { (err, result) in
+				if let op = self.testImages.first(where: { result?.sourceURL.absoluteString == $0.url.absoluteString }) {
+					remainingToCheck -= 1
 					if op.validate(with: result) == false {
 						if result == nil {
 							XCTFail("Failed to download image: \(err?.localizedDescription ?? "Unknnown error")")
 						}
 						XCTFail("Failed getting size of \(result!.sourceURL.absoluteString). Expected \(NSStringFromCGSize(op.expectedSize)), got \(NSStringFromCGSize(result!.size))")
 					}
-					remainingToCheck -= 1
 					if remainingToCheck == 0 {
 						expectation.fulfill()
 					}
+					print("\(remainingToCheck) images to check")
 				}
 			}
 		}

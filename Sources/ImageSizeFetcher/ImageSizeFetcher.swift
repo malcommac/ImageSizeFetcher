@@ -66,7 +66,7 @@ public class ImageSizeFetcher: NSObject, URLSessionDataDelegate {
 	///   - url: url of the image you want to analyze.
 	///   - force: true to skip cache and force download.
 	///   - callback: completion callback called to give out the result.
-	public func imageInfo(atURL url: URL, force: Bool = false, _ callback: @escaping Callback) {
+	public func sizeFor(atURL url: URL, force: Bool = false, _ callback: @escaping Callback) {
 		guard force == false, let entry = cache.object(forKey: (url as NSURL)) else {
 			// we don't have a cached result or we want to force download
 			let request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: self.timeout)

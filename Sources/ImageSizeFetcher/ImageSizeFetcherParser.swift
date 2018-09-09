@@ -171,8 +171,8 @@ public class ImageSizeFetcherParser {
 				if data[i] != 0xFF { //Check that we are truly at the start of another block
 					return nil
 				}
-				if data[i+1] == 0xC0 {
-					// 0xFFC0 is the "Start of frame" marker which contains the file size
+				if data[i+1] >= 0xC0 && data[i+1] <= 0xC3 { // if marker type is SOF0, SOF1, SOF2
+					// "Start of frame" marker which contains the file size
 					var w: UInt16 = 0; var h: UInt16 = 0;
 					(data as NSData).getBytes(&h, range: NSMakeRange(i + 5, 2))
 					(data as NSData).getBytes(&w, range: NSMakeRange(i + 7, 2))
@@ -189,6 +189,20 @@ public class ImageSizeFetcherParser {
 		}
 	}
 	
+}
+
+//MARK: Private UIKit Extensions
+
+private extension Data {
+	
+	func subdata(in range: ClosedRange<Index>) -> Data {
+		return subdata(in: range.lowerBound ..< range.upperBound + 1)
+	}
+	
+	func substring(in range: ClosedRange<Index>) -> String? {
+		return String.init(data: self.subdata(in: range), encoding: .utf8)
+	}
+
 }
 
 private extension UInt8 {
