@@ -38,11 +38,11 @@ class ImageSizeFetcherTests: XCTestCase {
 	func generateImagesWithDummyImage(_ count: Int = 5, extension: String, in dest: inout [ImageTestSource]) {
 		for _ in 0..<count {
 			let size = CGSize(width: random(from: 50, to: 500), height: random(from: 50, to: 500))
-			dest.append(ImageTestSource("https://dummyimage.com/\(size.width)x\(size.height).png", expSize: size))
+			dest.append(ImageTestSource("https://dummyimage.com/\(Int(size.width))x\(Int(size.height)).png", expSize: size))
 		}
 	}
 	
-    func testExample() {
+    func testFetcher() {
 		let expectation = XCTestExpectation(description: "Download apple.com home page")
 
 		generateImagesWithDummyImage(extension: "png", in: &self.testImages)
@@ -67,7 +67,7 @@ class ImageSizeFetcherTests: XCTestCase {
 					if remainingToCheck == 0 {
 						expectation.fulfill()
 					}
-					print("\(remainingToCheck) images to check")
+					print("Image \(op.url.absoluteString) checked with \(result!.downloadedData) bytes, \(remainingToCheck) images remaining to check")
 				}
 			}
 		}
@@ -76,6 +76,6 @@ class ImageSizeFetcherTests: XCTestCase {
     }
     
     static var allTests = [
-        ("testExample", testExample),
+        ("testFetcher", testFetcher),
     ]
 }

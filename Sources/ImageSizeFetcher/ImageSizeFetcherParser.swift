@@ -89,6 +89,9 @@ public class ImageSizeFetcherParser {
 	/// Source image url
 	public let sourceURL: URL
 	
+	/// Data downloaded to parse header informations.
+	public private(set) var downloadedData: Int
+	
 	/// Initialize a new parser from partial data from server.
 	///
 	/// - Parameter data: partial data from server.
@@ -103,6 +106,7 @@ public class ImageSizeFetcherParser {
 		self.format = imageFormat
 		self.size = size
 		self.sourceURL = sourceURL
+		self.downloadedData = data.count
 	}
 	
 	/// Parse collected data from a specified file format and attempt to get the size of the image frame.
