@@ -71,8 +71,7 @@ public class ImageSizeFetcherParser {
 		/// - Throws: throw an exception if file is not supported.
 		internal init(fromData data: Data) throws {
 			// Evaluate the format of the image
-			var length = UInt16(0)
-			(data as NSData).getBytes(&length, range: NSRange(location: 0, length: 2))
+			let length: UInt16 = data[0..<2]
 			switch CFSwapInt16(length) {
 			case 0xFFD8:	self = .jpeg
 			case 0x8950:	self = .png
@@ -126,26 +125,25 @@ public class ImageSizeFetcherParser {
 		
 		switch format {
 		case .bmp:
-			var length: UInt16 = 0
-			(data as NSData).getBytes(&length, range: NSRange(location: 14, length: 4))
-			
-			var w: UInt32 = 0; var h: UInt32 = 0;
-			(data as NSData).getBytes(&w, range: (length == 12 ? NSMakeRange(18, 4) : NSMakeRange(18, 2)))
-			(data as NSData).getBytes(&h, range: (length == 12 ? NSMakeRange(18, 4) : NSMakeRange(18, 2)))
+			let length: UInt16 = data[14, 4]
+
+			let start = 18
+			let startOffset = length == 12 ? 4 : 2
+
+			let w: UInt32 = data[start, startOffset]
+			let h: UInt32 = data[start, startOffset]
 			
 			return CGSize(width: Int(w), height: Int(h))
 			
 		case .png:
-			var w: UInt32 = 0; var h: UInt32 = 0;
-			(data as NSData).getBytes(&w, range: NSRange(location: 16, length: 4))
-			(data as NSData).getBytes(&h, range: NSRange(location: 20, length: 4))
+			let w: UInt32 = data[16, 4]
+			let h: UInt32 = data[20, 4]
 			
 			return CGSize(width: Int(CFSwapInt32(w)), height: Int(CFSwapInt32(h)))
 			
 		case .gif:
-			var w: UInt16 = 0; var h: UInt16 = 0
-			(data as NSData).getBytes(&w, range: NSRange(location: 6, length: 2))
-			(data as NSData).getBytes(&h, range: NSRange(location: 8, length: 2))
+			let w: UInt16 = data[6, 2]
+			let h: UInt16 = data[8, 2]
 			
 			return CGSize(width: Int(w), height: Int(h))
 			
@@ -180,10 +178,9 @@ public class ImageSizeFetcherParser {
 				}
 				if data[i+1] >= 0xC0 && data[i+1] <= 0xC3 { // if marker type is SOF0, SOF1, SOF2
 					// "Start of frame" marker which contains the file size
-					var w: UInt16 = 0; var h: UInt16 = 0;
-					(data as NSData).getBytes(&h, range: NSMakeRange(i + 5, 2))
-					(data as NSData).getBytes(&w, range: NSMakeRange(i + 7, 2))
-					
+					let w: UInt16 = data[i + 5, 2]
+					let h: UInt16 = data[i + 7, 2]
+
 					let size = CGSize(width: Int(CFSwapInt16(w)), height: Int(CFSwapInt16(h)) );
 					return size
 				} else {
@@ -198,16 +195,16 @@ public class ImageSizeFetcherParser {
 	
 }
 
-//MARK: Private UIKit Extensions
+//MARK: Private Foundation Extensions
 
 private extension Data {
-	
-	func subdata(in range: ClosedRange<Index>) -> Data {
-		return subdata(in: range.lowerBound ..< range.upperBound + 1)
+
+	subscript<T>(start: Int, length: Int) -> T {
+		return self[start..<start + length]
 	}
-	
-	func substring(in range: ClosedRange<Index>) -> String? {
-		return String.init(data: self.subdata(in: range), encoding: .utf8)
+
+	subscript<T>(range: Range<Data.Index>) -> T {
+		return subdata(in: range).withUnsafeBytes { $0.pointee }
 	}
 
 }
