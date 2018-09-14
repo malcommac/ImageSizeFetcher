@@ -178,8 +178,8 @@ public class ImageSizeFetcherParser {
 				}
 				if data[i+1] >= 0xC0 && data[i+1] <= 0xC3 { // if marker type is SOF0, SOF1, SOF2
 					// "Start of frame" marker which contains the file size
-					let w: UInt16 = data[i + 5, 2]
-					let h: UInt16 = data[i + 7, 2]
+					let h: UInt16 = data[i + 5, 2]
+					let w: UInt16 = data[i + 7, 2]
 
 					let size = CGSize(width: Int(CFSwapInt16(w)), height: Int(CFSwapInt16(h)) );
 					return size
