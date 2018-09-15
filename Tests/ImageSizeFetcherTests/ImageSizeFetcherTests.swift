@@ -38,7 +38,7 @@ class ImageSizeFetcherTests: XCTestCase {
 	func generateImagesWithDummyImage(_ count: Int = 5, extension: String, in dest: inout [ImageTestSource]) {
 		for _ in 0..<count {
 			let size = CGSize(width: random(from: 50, to: 500), height: random(from: 50, to: 500))
-			dest.append(ImageTestSource("https://dummyimage.com/\(Int(size.width))x\(Int(size.height)).png", expSize: size))
+			dest.append(ImageTestSource("https://dummyimage.com/\(Int(size.width))x\(Int(size.height)).\(`extension`)", expSize: size))
 		}
 	}
 	
