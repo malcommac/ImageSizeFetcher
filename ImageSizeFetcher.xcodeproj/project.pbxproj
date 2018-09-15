@@ -131,7 +131,10 @@
 				52D6D99C1BEFF38C002C0205 /* Configs */,
 				52D6D97D1BEFF229002C0205 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 1;
 		};
 		52D6D97D1BEFF229002C0205 /* Products */ = {
 			isa = PBXGroup;
