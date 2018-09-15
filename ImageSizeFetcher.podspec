@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ImageSizeFetcher"
-  s.version      = "0.9.0"
+  s.version      = "0.9.1"
   s.summary      = "Finds the size or type of an image given its URL by fetching as little as needed"
   s.description  = <<-DESC
     ImageSizeFetcher attempt to parse the size of an image downloaded as little data as needed without getting the entire file.
